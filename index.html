@@ -139,14 +139,6 @@
     </table>
 </center>
 
-<!-- ФИНАЛКА (БЕЗ ЧЕРЕПОВ) -->
-<center>
-    <br>
-    <font face="Webdings" size="7">Y Y Y Y</font>
-    <br>
-    <font face="Impact" size="7" color="#FF00FF"><blink>КЫШ КОМУ ГОВОРЯТ!</blink></font>
-</center>
-
 <!-- СУПЕР-ГЛЮЧНЫЙ СКРИПТ ЧАСОВ (как и был) -->
 <script>
     function megaGlitchClock() {
@@ -159,15 +151,15 @@
 
         // 15% шанс полного хаоса
         if (glitchLevel < 0.15) {
-            document.getElementById('superGlitchClock').innerHTML = "☠️☠️☠️";
+            document.getElementById('superGlitchClock').innerHTML = "🐖💨";
             return;
         }
 
         // 10% шанс инверсии
         if (glitchLevel < 0.25) {
-            h = 23 - h;
-            m = 59 - m;
-            s = 59 - s;
+            h = 66 - h;
+            m = 66 - m;
+            s = 66 - s;
         }
 
         // 10% шанс случайных цифр
@@ -198,11 +190,7 @@
         if (glitchLevel > 0.65 && glitchLevel < 0.7) {
             timeStr = timeStr + ":";
         }
-        // Иногда .gif
-        if (glitchLevel > 0.7 && glitchLevel < 0.75) {
-            timeStr = timeStr + ".gif";
-        }
-
+        
         window.lastGlitchTime = timeStr;
         document.getElementById('superGlitchClock').innerHTML = timeStr;
     }
